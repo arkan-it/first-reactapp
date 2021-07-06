@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: Helvetica, sans-serif;
+  font-weight: 900;
+  background-color: #f5f5f5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 100vh;  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.container{
+  background-color: #fff;
+  width: 500px;
+  height: 90vh;
   display: flex;
   flex-direction: column;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 0 40px 10px rgb(202, 202, 202);
+}
+
+.container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.container .birthdays {
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.container .birthdays .btn{
+  font-weight: 500;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
+  flex-grow: 1;
+  margin-left: .7rem;
+  color: #d1d1d1;
+}
+
+.container .birthdays.btn span{
+  transition: all .2s ease;
+}
+
+.container .birthdays .btn span:hover{
+  cursor: pointer;
+  color: #3332FF;
+}
+
+.container .birthdays .text h4{
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.container .birthdays .text span{
+  color:rgb(202, 202, 202);
+  font-size: .9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.container .birthdays img{
+  object-fit:cover;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.container .button-container{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #3332FF ;
+  color: #fff;
+  padding: .7rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.container .button-container:hover{
+  background-color: #5959fd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
